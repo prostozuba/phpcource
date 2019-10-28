@@ -1,0 +1,118 @@
+Core\Exceptions\Fatal: Unknown column 'id_messag' in 'where clause' in C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php(28): Core\Sql->query('SELECT * FROM m...', Array)
+#2 C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php(64): Core\Sql->select('SELECT * FROM m...', Array)
+#3 C:\xampp\htdocs\oop_cource\2_cource\Core\Model.php(33): Core\Sql->one('messages', 'id_messag=:id', Array)
+#4 C:\xampp\htdocs\oop_cource\2_cource\Controllers\Messages.php(34): Core\Model->one('52')
+#5 C:\xampp\htdocs\oop_cource\2_cource\index.php(44): Controllers\Messages->action_one()
+#6 {main}
+-----------
+Core\Exceptions\Fatal: Unknown column 'id_messag' in 'where clause' in C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php(28): Core\Sql->query('SELECT * FROM m...', Array)
+#2 C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php(64): Core\Sql->select('SELECT * FROM m...', Array)
+#3 C:\xampp\htdocs\oop_cource\2_cource\Core\Model.php(33): Core\Sql->one('messages', 'id_messag=:id', Array)
+#4 C:\xampp\htdocs\oop_cource\2_cource\Controllers\Messages.php(34): Core\Model->one('100')
+#5 C:\xampp\htdocs\oop_cource\2_cource\index.php(44): Controllers\Messages->action_one()
+#6 {main}
+-----------
+Core\Exceptions\Fatal: Unknown column 'id_messag' in 'where clause' in C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php(28): Core\Sql->query('SELECT * FROM m...', Array)
+#2 C:\xampp\htdocs\oop_cource\2_cource\Core\Sql.php(64): Core\Sql->select('SELECT * FROM m...', Array)
+#3 C:\xampp\htdocs\oop_cource\2_cource\Core\Model.php(33): Core\Sql->one('messages', 'id_messag=:id', Array)
+#4 C:\xampp\htdocs\oop_cource\2_cource\Controllers\Messages.php(34): Core\Model->one('100')
+#5 C:\xampp\htdocs\oop_cource\2_cource\index.php(44): Controllers\Messages->action_one()
+#6 {main}
+-----------
+Core\Exceptions\Fatal: Table 'phpcource.messages' doesn't exist in C:\xampp\htdocs\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\2_cource\Core\Sql.php(28): Core\Sql->query('SELECT * FROM m...', Array)
+#2 C:\xampp\htdocs\2_cource\Core\Sql.php(58): Core\Sql->select('SELECT * FROM m...')
+#3 C:\xampp\htdocs\2_cource\Core\Model.php(27): Core\Sql->all('messages', 'dt')
+#4 C:\xampp\htdocs\2_cource\Controllers\Messages.php(19): Core\Model->all()
+#5 C:\xampp\htdocs\2_cource\index.php(44): Controllers\Messages->action_index()
+#6 {main}
+-----------
+Core\Exceptions\Fatal: Table 'phpcource.messages' doesn't exist in C:\xampp\htdocs\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\2_cource\Core\Sql.php(28): Core\Sql->query('SELECT * FROM m...', Array)
+#2 C:\xampp\htdocs\2_cource\Core\Sql.php(58): Core\Sql->select('SELECT * FROM m...')
+#3 C:\xampp\htdocs\2_cource\Core\Model.php(27): Core\Sql->all('messages', 'dt')
+#4 C:\xampp\htdocs\2_cource\Controllers\Messages.php(19): Core\Model->all()
+#5 C:\xampp\htdocs\2_cource\index.php(44): Controllers\Messages->action_index()
+#6 {main}
+-----------
+Core\Exceptions\Fatal: Table 'phpcource.messages' doesn't exist in C:\xampp\htdocs\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\2_cource\Core\Sql.php(28): Core\Sql->query('SELECT * FROM m...', Array)
+#2 C:\xampp\htdocs\2_cource\Core\Sql.php(58): Core\Sql->select('SELECT * FROM m...')
+#3 C:\xampp\htdocs\2_cource\Core\Model.php(27): Core\Sql->all('messages', 'dt')
+#4 C:\xampp\htdocs\2_cource\Controllers\Messages.php(19): Core\Model->all()
+#5 C:\xampp\htdocs\2_cource\index.php(44): Controllers\Messages->action_index()
+#6 {main}
+-----------
+Core\Exceptions\Fatal: Table 'phpcource.messages' doesn't exist in C:\xampp\htdocs\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\2_cource\Core\Sql.php(28): Core\Sql->query('SELECT * FROM m...', Array)
+#2 C:\xampp\htdocs\2_cource\Core\Sql.php(58): Core\Sql->select('SELECT * FROM m...')
+#3 C:\xampp\htdocs\2_cource\Core\Model.php(27): Core\Sql->all('messages', 'dt')
+#4 C:\xampp\htdocs\2_cource\Controllers\Messages.php(19): Core\Model->all()
+#5 C:\xampp\htdocs\2_cource\index.php(44): Controllers\Messages->action_index()
+#6 {main}
+-----------
+Core\Exceptions\Fatal: Table 'phpcource.messages' doesn't exist in C:\xampp\htdocs\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\2_cource\Core\Sql.php(28): Core\Sql->query('SELECT * FROM m...', Array)
+#2 C:\xampp\htdocs\2_cource\Core\Sql.php(58): Core\Sql->select('SELECT * FROM m...')
+#3 C:\xampp\htdocs\2_cource\Core\Model.php(27): Core\Sql->all('messages', 'dt')
+#4 C:\xampp\htdocs\2_cource\Controllers\Messages.php(19): Core\Model->all()
+#5 C:\xampp\htdocs\2_cource\index.php(44): Controllers\Messages->action_index()
+#6 {main}
+-----------
+Core\Exceptions\Fatal: Table 'phpcource.messages' doesn't exist in C:\xampp\htdocs\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\2_cource\Core\Sql.php(28): Core\Sql->query('SELECT * FROM m...', Array)
+#2 C:\xampp\htdocs\2_cource\Core\Sql.php(58): Core\Sql->select('SELECT * FROM m...')
+#3 C:\xampp\htdocs\2_cource\Core\Model.php(27): Core\Sql->all('messages', 'dt')
+#4 C:\xampp\htdocs\2_cource\Controllers\Messages.php(19): Core\Model->all()
+#5 C:\xampp\htdocs\2_cource\index.php(44): Controllers\Messages->action_index()
+#6 {main}
+-----------
+Core\Exceptions\Fatal: Table 'phpcource.messages' doesn't exist in C:\xampp\htdocs\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\2_cource\Core\Sql.php(28): Core\Sql->query('SELECT * FROM m...', Array)
+#2 C:\xampp\htdocs\2_cource\Core\Sql.php(58): Core\Sql->select('SELECT * FROM m...')
+#3 C:\xampp\htdocs\2_cource\Core\Model.php(27): Core\Sql->all('messages', 'dt')
+#4 C:\xampp\htdocs\2_cource\Controllers\Messages.php(19): Core\Model->all()
+#5 C:\xampp\htdocs\2_cource\index.php(44): Controllers\Messages->action_index()
+#6 {main}
+-----------
+Core\Exceptions\Fatal: Duplicate entry 'uriy' for key 'login' in C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(83): Core\Sql->query('INSERT INTO use...', Array)
+#2 C:\xampp\htdocs\phpcource\2_cource\Core\Model.php(45): Core\Sql->insert('users', Array)
+#3 C:\xampp\htdocs\phpcource\2_cource\Controllers\User.php(73): Core\Model->add(Array)
+#4 C:\xampp\htdocs\phpcource\2_cource\index.php(35): Controllers\User->action_reg()
+#5 {main}
+-----------
+Core\Exceptions\Fatal: Duplicate entry 'uriy' for key 'login' in C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(83): Core\Sql->query('INSERT INTO use...', Array)
+#2 C:\xampp\htdocs\phpcource\2_cource\Core\Model.php(45): Core\Sql->insert('users', Array)
+#3 C:\xampp\htdocs\phpcource\2_cource\Controllers\User.php(73): Core\Model->add(Array)
+#4 C:\xampp\htdocs\phpcource\2_cource\index.php(35): Controllers\User->action_reg()
+#5 {main}
+-----------
