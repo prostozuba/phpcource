@@ -1,7 +1,7 @@
 <?php
 use Core\Auth;
-
 ?>
+
 <!doctype html>
 <html lang="ru">
 <head>

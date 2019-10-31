@@ -1,11 +1,12 @@
 
 
         <form method="post">
-            title
+            <br>
+            Title
             <br>
             <input type="text" name="name" value="<?=$fields['name']?>">
             <br>
-            content
+            Content
             <br>
             <textarea name="text" cols="30" rows="10"><?=$fields['text']?></textarea>
             <br>

@@ -39,14 +39,16 @@
 
         protected function validation($fields){
 
-                if ($fields['login'] == '' || $fields['password'] == '') {
+                if ($fields['login'] == '' || $fields['password'] == '' || $fields['name'] == '') {
                     $this->addError('заполните все поля');
                 } else {
                     if (mb_strlen($fields['login'], 'UTF8') < 4)  {
                     $this->addError('логин может быть не менее 4-х символов');
                 }   if (mb_strlen($fields['password'], 'UTF8') < 5) {
-                    $this->addError('Пароль не может быть меньше 5-ти символов');
-                }
+                        $this->addError('Пароль не может быть меньше 5-ти символов');
+                }   if (mb_strlen($fields['name'], 'UTF8') < 15) {
+                    $this->addError('Ф.И.О не может быть меньше 15-ти символов');
                 }
         }
+    }
     }

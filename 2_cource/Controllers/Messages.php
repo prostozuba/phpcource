@@ -47,12 +47,14 @@
         public function action_add(){
 //            $this->redirectIfNotAuth();
 
+            $user = $this->user;
+
             if(count($_POST) > 0) {
 
                 $fields = [];
-
                 $fields['name'] = trim($_POST['name']);
                 $fields['text'] = trim($_POST['text']);
+                $fields['full_name'] = $user['name'];
 
                 $id = $this->model->add($fields);
 
@@ -63,7 +65,7 @@
                     exit;
                 }
             } else {
-                $fields = ['name' => '', 'text' => ''];
+                $fields = ['name' => '', 'text' => '', 'full_name' => ''];
                 $errors = [];
             }
             $this->title = 'Новое сообщение';

@@ -116,3 +116,48 @@ Stack trace:
 #4 C:\xampp\htdocs\phpcource\2_cource\index.php(35): Controllers\User->action_reg()
 #5 {main}
 -----------
+Core\Exceptions\Fatal: Duplicate entry 'uriy' for key 'login' in C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(83): Core\Sql->query('INSERT INTO use...', Array)
+#2 C:\xampp\htdocs\phpcource\2_cource\Core\Model.php(45): Core\Sql->insert('users', Array)
+#3 C:\xampp\htdocs\phpcource\2_cource\Controllers\User.php(73): Core\Model->add(Array)
+#4 C:\xampp\htdocs\phpcource\2_cource\index.php(35): Controllers\User->action_reg()
+#5 {main}
+-----------
+Core\Exceptions\Fatal: Duplicate entry 'uriy' for key 'login' in C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(83): Core\Sql->query('INSERT INTO use...', Array)
+#2 C:\xampp\htdocs\phpcource\2_cource\Core\Model.php(45): Core\Sql->insert('users', Array)
+#3 C:\xampp\htdocs\phpcource\2_cource\Controllers\User.php(73): Core\Model->add(Array)
+#4 C:\xampp\htdocs\phpcource\2_cource\index.php(35): Controllers\User->action_reg()
+#5 {main}
+-----------
+Core\Exceptions\Fatal: Column 'full_name' cannot be null in C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(83): Core\Sql->query('INSERT INTO mes...', Array)
+#2 C:\xampp\htdocs\phpcource\2_cource\Core\Model.php(45): Core\Sql->insert('messages', Array)
+#3 C:\xampp\htdocs\phpcource\2_cource\Controllers\Messages.php(61): Core\Model->add(Array)
+#4 C:\xampp\htdocs\phpcource\2_cource\index.php(35): Controllers\Messages->action_add()
+#5 {main}
+-----------
+Core\Exceptions\Fatal: Column 'full_name' cannot be null in C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(83): Core\Sql->query('INSERT INTO mes...', Array)
+#2 C:\xampp\htdocs\phpcource\2_cource\Core\Model.php(45): Core\Sql->insert('messages', Array)
+#3 C:\xampp\htdocs\phpcource\2_cource\Controllers\Messages.php(62): Core\Model->add(Array)
+#4 C:\xampp\htdocs\phpcource\2_cource\index.php(35): Controllers\Messages->action_add()
+#5 {main}
+-----------
+Core\Exceptions\Fatal: Column 'full_name' cannot be null in C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php:51
+Stack trace:
+#0 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(36): Core\Sql->checkError(Object(PDOStatement))
+#1 C:\xampp\htdocs\phpcource\2_cource\Core\Sql.php(83): Core\Sql->query('INSERT INTO mes...', Array)
+#2 C:\xampp\htdocs\phpcource\2_cource\Core\Model.php(45): Core\Sql->insert('messages', Array)
+#3 C:\xampp\htdocs\phpcource\2_cource\Controllers\Messages.php(57): Core\Model->add(Array)
+#4 C:\xampp\htdocs\phpcource\2_cource\index.php(35): Controllers\Messages->action_add()
+#5 {main}
+-----------

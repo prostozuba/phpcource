@@ -9,6 +9,9 @@
     <body>
 
     <em><?=$message['dt'] ?></em>
+    <br>
+    <strong><?=$message['full_name'] ?></strong>
+    <hr>
     <strong><?=$message['name'] ?></strong>
     <hr>
     <div><?=$message['text'] ?></div>

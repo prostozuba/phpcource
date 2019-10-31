@@ -15,6 +15,8 @@
         <div class="products clearfix">
             <? foreach ($messages as $msg): ?>
                 <article class="item">
+                    <b><?=$msg['full_name'] ?></b>
+                    <hr>
                     <b><?=$msg['name'] ?></b>
                     <br>
 <!--                    <div>--><?//=$msg['text'] ?><!--</div>-->

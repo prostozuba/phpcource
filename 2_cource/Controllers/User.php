@@ -28,6 +28,7 @@
 
                 $fields = [];
 
+                $fields['name'] = trim($_POST['name']);
                 $fields['login'] = trim($_POST['login']);
                 $fields['password'] = trim($_POST['password']);
                 $remember = isset($_POST['remember']);
@@ -48,7 +49,7 @@
                     $errors = $this->mUsers->errors();
                 }
             } else {
-                $fields = ['login' => '', 'password' => ''];
+                $fields = ['login' => '', 'password' => '', 'name'=> ''];
                 $errors = [];
                 $remember = '';
             }
@@ -66,7 +67,7 @@
             if(count($_POST) > 0) {
 
                 $fields = [];
-
+                $fields['name'] = trim($_POST['name']);
                 $fields['login'] = trim($_POST['login']);
                 $fields['password'] = Auth::hash(trim($_POST['password']));
 
@@ -78,7 +79,7 @@
                     exit;
                 }
             } else {
-                $fields = ['login' => '', 'password' => ''];
+                $fields = ['login' => '', 'password' => '', 'name' => ''];
                 $errors = [];
 
                 $this->content = $this->template('v_reg', [

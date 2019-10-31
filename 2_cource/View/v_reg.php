@@ -1,5 +1,10 @@
 
     <form method="post">
+        Ф.И.О
+        <br>
+        <input type="text" name="name">
+        <br>
+        <br>
         Login
         <br>
         <input type="text" name="login">

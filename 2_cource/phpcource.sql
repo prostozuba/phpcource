@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Окт 28 2019 г., 13:48
+-- Время создания: Окт 31 2019 г., 19:04
 -- Версия сервера: 10.4.8-MariaDB
 -- Версия PHP: 7.3.10
 
@@ -31,6 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `messages` (
   `id_message` int(10) UNSIGNED NOT NULL,
   `dt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `full_name` varchar(64) NOT NULL,
   `name` varchar(64) NOT NULL,
   `text` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -39,23 +40,9 @@ CREATE TABLE `messages` (
 -- Дамп данных таблицы `messages`
 --
 
-INSERT INTO `messages` (`id_message`, `dt`, `name`, `text`) VALUES
-(5, '2017-12-14 18:44:11', '768768768', '7687687yiu'),
-(7, '2017-12-14 19:05:36', '45654', 'tytrsyryrtdyty'),
-(8, '2017-12-14 19:11:39', '32543', '43534654'),
-(9, '2017-12-18 18:32:58', 'rty546754', '654654654'),
-(10, '2017-12-18 18:39:09', 'неке', 'нкенке'),
-(11, '2017-12-18 18:39:15', '554325423', '455234'),
-(12, '2017-12-18 18:46:03', '6765765', '6765'),
-(13, '2017-12-18 18:49:04', 'admin', '3432432'),
-(14, '2017-12-21 17:56:27', '65756', '757654756'),
-(15, '2017-12-21 17:58:28', '768765', '67587'),
-(16, '2017-12-21 18:20:13', '5634', '54363'),
-(17, '2017-12-21 18:26:13', '56546546', '54654'),
-(18, '2017-12-21 18:36:06', '67876876', '67868678'),
-(20, '2017-12-21 18:38:20', '654635', '654635 65463 5654635 65463 5 654635 65463 5 654635 65463 5 654635 65463 5 654635 65463 5 654635 65463 5 654635 65463 5'),
-(41, '2018-02-12 18:41:09', 'asfasf', 'sdgjksdgkjsdgjkksdgksd'),
-(42, '2019-10-28 12:44:15', 'rreer', 'erererer');
+INSERT INTO `messages` (`id_message`, `dt`, `full_name`, `name`, `text`) VALUES
+(1, '2019-10-31 17:50:25', 'Starikov Uriy Egorovoch', 'Hello', '123'),
+(2, '2019-10-31 18:01:02', 'Brunev Alexandr Vinalievich', 'Hello from Sanya', 'Hi Hi Hi!!!');
 
 -- --------------------------------------------------------
 
@@ -76,7 +63,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id_session`, `id_user`, `token`, `dt_open`, `status`) VALUES
-(3, 11, '42dcbe858d3446b22c03385ab5abca8c0021b64e2e7b42efbf7ffae86287be3e', '2019-10-28 12:44:42', '1');
+(6, 2, 'a4e27f77655e661d0aa2be178fb264a268ffc106c6841f3f28182eda86407049', '2019-10-31 18:00:34', '1');
 
 -- --------------------------------------------------------
 
@@ -99,11 +86,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `login`, `password`, `name`, `status`, `info`, `dt_reg`) VALUES
-(1, 'admin', 'b44b5d4e73e46fb62419404722b336ff644b267c1577dba07ae6411c2205b33f', 'Dmitry', '1', '', '2017-12-11 18:16:49'),
-(2, 'maganer', 'b44b5d4e73e46fb62419404722b336ff644b267c1577dba07ae6411c2205b33f', 'Some', '1', 'active user now', '2017-12-11 18:17:48'),
-(7, 'uriy', '$argon2i$v=19$m=1024,t=2,p=2$dGhpc2lzc2x0Zm9yYXJnbw$AwObnldFnizr', '', '0', '', '2019-10-28 12:30:02'),
-(10, 'Yriy', '269e81967f8048b9f85e31c1b4268397e87e7f06d08fc4d932ab9738c80b730d', '', '0', '', '2019-10-28 12:41:10'),
-(11, 'Canya', '096505d97b82efc0df6dcc7a6c70bc0464134cf0b8b8085c2769dc39023c4fce', '', '0', '', '2019-10-28 12:44:32');
+(1, 'uriy', '269e81967f8048b9f85e31c1b4268397e87e7f06d08fc4d932ab9738c80b730d', 'Starikov Uriy Egorovoch', '0', '', '2019-10-31 15:29:00'),
+(2, 'Canya', '59e560923de5b569563b0fe8f58af2cae82857a38a527c876010e4968b2a4bb9', 'Brunev Alexandr Vinalievich', '0', '', '2019-10-31 18:00:18');
 
 --
 -- Индексы сохранённых таблиц
@@ -137,19 +121,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT для таблицы `sessions`
 --
 ALTER TABLE `sessions`
-  MODIFY `id_session` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_session` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_user` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
