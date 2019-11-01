@@ -3,15 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="abbbb5f1-834e-4940-bab0-fae7e01ed367" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/Admin.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/Messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/Messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/MessagesA.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/v_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/v_add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/v_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/v_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/v_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/v_login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/v_main.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/v_main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/v_one.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/v_one.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/v_reg.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/v_reg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpcource.sql" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,8 @@
       <workItem from="1572167213255" duration="263000" />
       <workItem from="1572260630855" duration="7144000" />
       <workItem from="1572446241336" duration="811000" />
-      <workItem from="1572531629536" duration="11887000" />
+      <workItem from="1572531629536" duration="12670000" />
+      <workItem from="1572599243812" duration="3515000" />
     </task>
     <servers />
   </component>

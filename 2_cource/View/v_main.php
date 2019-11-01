@@ -22,14 +22,14 @@ use Core\Auth;
         <div class="wrapper clearfix">
             <div class="logo">
                 <div class="image">
-                    <img src="<?=$root?>assets/img/blog.png" alt="">
+                    <img src="<?=$root?>assets/img/owerworld.png" alt="">
                 </div>
                 <div class="slogan">
-                    <div class="title">Учебный блог</div>
-                    <div class="subtitle">Мы постепенно растем</div>
+                    <div class="title">Тестовое задание</div>
+                    <div class="subtitle">С каждым днем мы становимся лучше</div>
                 </div>
             </div>
-            <div class="phone">(0325) 937 99 92</div>
+            <div class="phone">(....) 937 99 92</div>
         </div>
     </header>
     <nav>
@@ -80,15 +80,15 @@ use Core\Auth;
                     <?=$content?>
                 </section>
                 <section>
-                    <h2>Отзывы о нашем блоге</h2>
-                    <div> (0344) 093 34 62</div>
+                    <h2>Отзывы</h2>
+                    <div> (0344) 0934 3411 622</div>
                 </section>
             </main>
         </div>
     </section>
     <footer>
         <div class="wrapper">
-            <span class="copy">&copy; Учебный блог <?=date('Y')?>, все права защищены!</span>
+            <span class="copy">&copy; Тестовое задание <?=date('Y')?>, все права защищены!</span>
         </div>
     </footer>
 </div>

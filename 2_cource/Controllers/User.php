@@ -28,7 +28,6 @@
 
                 $fields = [];
 
-                $fields['name'] = trim($_POST['name']);
                 $fields['login'] = trim($_POST['login']);
                 $fields['password'] = trim($_POST['password']);
                 $remember = isset($_POST['remember']);
@@ -49,7 +48,7 @@
                     $errors = $this->mUsers->errors();
                 }
             } else {
-                $fields = ['login' => '', 'password' => '', 'name'=> ''];
+                $fields = ['login' => '', 'password' => ''];
                 $errors = [];
                 $remember = '';
             }
@@ -93,6 +92,5 @@
                 'fields' => $fields,
                 'errors' => $errors
             ]);
-
         }
     }

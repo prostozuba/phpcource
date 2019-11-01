@@ -45,7 +45,6 @@
         }
 
         public function action_add(){
-//            $this->redirectIfNotAuth();
 
             $user = $this->user;
 

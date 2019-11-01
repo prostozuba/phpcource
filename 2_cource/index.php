@@ -1,6 +1,5 @@
 <?php
 
-use Core\Template;
 
 session_start();
 

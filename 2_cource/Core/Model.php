@@ -9,15 +9,6 @@
         protected $table;
         protected $pk;
 
-        protected static $instance;
-
-//        public static function instance(){
-//            if(self::$instance == null){
-//                self::$instance = new self();
-//            }
-//            return self::$instance;
-//        }
-
         public function __construct(){
             $this->db = Sql::instance();
             $this->errors = [];

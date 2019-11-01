@@ -16,11 +16,12 @@
             </div>
             <input type="submit" value="ok">
             <br>
+            <?foreach ($errors as $err):?>
+                <?='<p>'.$err.'</p>'?>
+            <?endforeach;?>
             <a href="<?=$root?>messages">Войти на сайт без авторизации</a>
             <hr>
             <a href="<?=$root?>user/reg">Регистрация</a>
         </form>
-<!--        --><?//foreach ($errors as $err):?>
-<!--            --><?//='<p>'.$err.'</p>'?>
-<!--        --><?//endforeach;?>
+
 
